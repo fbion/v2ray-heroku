@@ -1,14 +1,7 @@
 cd /v2raybin
-wget -O v2ray.zip http://github.com/v2ray/v2ray-core/releases/download/v$VER/v2ray-linux-64.zip
+wget -O v2ray.zip https://github.com/ginuerzh/gost/releases/download/v$VER/gost_$VER_linux_amd64.tar.gz
 unzip v2ray.zip 
-cd /v2raybin/v2ray-v$VER-linux-64
-chmod +x v2ray
-chmod +x v2ctl
+cd /v2raybin/gost_$VER_linux_amd64
+chmod +x gost
 
-echo -e -n "$CONFIG_JSON1" > config.json
-echo -e -n "$PORT" >> config.json
-echo -e -n "$CONFIG_JSON2" >> config.json
-echo -e -n "$UUID" >> config.json
-echo -e -n "$CONFIG_JSON3" >> config.json
-
-./v2ray
+./gost -L mwss://:443
