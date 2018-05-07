@@ -4,4 +4,4 @@ tar xvf v2ray.tar.gz
 cd /v2raybin/gost_2.5_linux_amd64
 chmod +x gost
 
-./gost -L mwss://:443
+./gost -L mwss://:8443
