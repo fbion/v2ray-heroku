@@ -3,9 +3,9 @@
   "description": "deploy V2ray to Heroku.",
   "keywords": ["V2ray"],
   "env": {
-    "VER": {
-       "description": "输入v2ray Core 版本",
-       "value": "3.15"
+    "MODE": {
+       "description": "输入MODE : 可设置为 wss、ws、mws、mwss、http2、tls等。",
+       "value": "ws"
      }, 
     "UUID": {
        "description": "Vmess协议默认UUID，请输入自己的UUID",
