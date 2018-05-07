@@ -4,6 +4,4 @@ tar zxf v2ray.tar.gz
 cd /v2raybin/gost_2.5_linux_amd64
 chmod +x gost
 
-./gost -L ws://:"$PORT"
-echo "$PORT"
-export portport "$PORT"
+./gost -L $MODE://:"$PORT"
